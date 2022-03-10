@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="page-title">
+          Conversor de moedas
+        </h1><br>
+        <p class="page-subtitle">
+          Descubra os valores em Real R$
+        </p>
+
+        <br>
+
+        <label for="moeda">Insira o valor</label><br>
+        <label for="moeda"> (Dolar............Euro..........Bitcoin) </label><br><br>
+        <input type="number" id="valor" size="2" style="background: rgba(255, 248, 205, 0.959);"/>
+        <input type="number" id="valor-euro" size="2" style="background: rgba(255, 248, 205, 0.959);"/>
+        <input type="number" id="valor-bit" size="2" style="background: rgba(255, 248, 205, 0.959);"/><br>
+        <button type="submit" onclick="Converter()">Converter U$ / R$</button>
+        <button type="submit" onclick="ConverterEuro()">Converter € / R$</button>
+        <button type="submit" onclick="ConverterBit()">Converter ₿ / R$</button>
+        <h2 id="valorConvertido"></h2>
+      </div>
+      
+      <footer class="footer">Copyright © 2022 Marcos Capiberibe</footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
